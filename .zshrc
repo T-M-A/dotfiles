@@ -6,4 +6,5 @@ source ~/powerlevel9k/powerlevel9k.zsh-theme
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh dir vcs newline status)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time status time)
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+fpath=(/usr/local/share/zsh-completions $fpath)
 alias ls='ls -G'
