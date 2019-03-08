@@ -1,3 +1,5 @@
+autoload -Uz compinit
+compinit
 export TERM="xterm-256color"
 POWERLEVEL9K_MODE='nerdfont-complete'
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
