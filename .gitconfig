@@ -1,0 +1,30 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Maxim Tkachenko
+	email = maxim.tkachenko@gmail.com
+[push]
+	default = simple
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 227
+	frag = magenta bold
+	commit = 227 bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[core]
+	editor = /Applications/Visual\\ Studio\\ Code.app/Contents/Resources/app/bin/code --wait
+	quotepath = false
+	autocrlf = input
+	excludesfile = ~/.gitignore_global
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = /Applications/Visual\\ Studio\\ Code.app/Contents/Resources/app/bin/code --wait --diff $LOCAL $REMOTE
