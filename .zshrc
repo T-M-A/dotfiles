@@ -18,3 +18,6 @@ alias bubc='brew upgrade && brew cleanup'
 alias bubu='bubo && bubc'
 alias bcubo='brew update && brew cask outdated'
 alias bcubc='brew cask reinstall $(brew cask outdated) && brew cleanup'
+gpgconf --launch gpg-agent
+SSH_AUTH_SOCK=$HOME/.gnupg/S.gpg-agent.ssh; export SSH_AUTH_SOCK;
+export SSH_AUTH_SOCKET=$HOME/.gnupg/S.gpg-agent.ssh
