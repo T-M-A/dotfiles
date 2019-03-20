@@ -28,3 +28,7 @@
     tool = default-difftool
 [difftool "default-difftool"]
     cmd = /Applications/Visual\\ Studio\\ Code.app/Contents/Resources/app/bin/code --wait --diff $LOCAL $REMOTE
+[http]
+[https]
+[http]
+	proxy = 
