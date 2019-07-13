@@ -30,5 +30,10 @@
     cmd = /Applications/Visual\\ Studio\\ Code.app/Contents/Resources/app/bin/code --wait --diff $LOCAL $REMOTE
 [http]
 [https]
+	proxy = 
 [http]
 	proxy = 
+[commit]
+	gpgSign = false
+[tag]
+	forceSignAnnotated = false

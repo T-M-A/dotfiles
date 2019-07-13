@@ -69,3 +69,16 @@ setopt prompt_subst # Enable parameter expansion, command substitution, and arit
 # ===== Scripts and Functions
 setopt multios # perform implicit tees or cats when multiple redirections are attempted
 
+export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
+export PATH="/usr/local/opt/qt/bin:$PATH"
+bindkey "^U" backward-kill-line
+
+# binds hex 0x18 0x7f with deleting everything to the left of the cursor
+bindkey "^X\\x7f" backward-kill-line
+
+# adds redo
+bindkey "^X^_" redo
+
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
